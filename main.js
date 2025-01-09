@@ -63,7 +63,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/olliebar.png",
-        "SceneName": "i have no idea of name",
+        "SceneName": "getting recommend of name",
         "SceneDay": "(Second day)",
         "SceneComment": '"I think you’re a good person."',
         "SceneOST": "ost/generalbartheme.mp3"
@@ -111,11 +111,11 @@ var scenes = [
         "SceneOST": "ost/conversationsofmind.mp3"
     },
     {
-        "ImagePath": "imgs/artieporch.png",
-        "SceneName": "Shadow",
+        "ImagePath": "imgs/theodawn.png",
+        "SceneName": "Sunrise",
         "SceneDay": "(Third day)",
-        "SceneComment": '"Sometimes it just feels like I’m running away from myself."',
-        "SceneOST": "ost/mainthemeloop.mp3"
+        "SceneComment": '"Thank you, Leo, for just listening."',
+        "SceneOST": null
     },
     {
         "ImagePath": "imgs/hunterhug.png",
@@ -125,12 +125,12 @@ var scenes = [
         "SceneOST": "ost/mainthemedrumsloop.mp3"
     },
     {
-        "ImagePath": "imgs/theodawn.png",
-        "SceneName": "Listening",
+        "ImagePath": "imgs/artieporch.png",
+        "SceneName": "Shadow",
         "SceneDay": "(Third day)",
-        "SceneComment": '"Thank you, Leo, for just listening."',
-        "SceneOST": null
-    },
+        "SceneComment": '"Sometimes it just feels like I’m running away from myself."',
+        "SceneOST": "ost/mainthemeloop.mp3"
+    }
 ];
 
 function setActiveScene(num) {
@@ -151,6 +151,7 @@ function setActiveScene(num) {
         ost.play();
 
         ostPlayer.style.display = "flex";
+        ostPlayBtn.innerText = "Pause";
     }
 }
 

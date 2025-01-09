@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* general tag things */
+
 * {
     box-sizing: border-box;
     font-family: "Noto Sans", serif;
@@ -20,6 +22,8 @@ body {
 h1, h2, h3, p {
     margin-top: 10px;
 }
+
+/* main things */
 
 #welcomeScreen {
     position: absolute;
@@ -44,9 +48,28 @@ main {
     aspect-ratio: 16 / 9;
 }
 
-#sceneImg {
+#sceneMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     height: 100%;
+
+    flex-grow: 1;
+
+    background-color: black;
+    color: white;
 }
+
+#sceneImg {
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+/* sidebar things */
 
 #sidebar {
     position: fixed;
@@ -83,8 +106,8 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
     gap: 20px;
+
     padding-bottom: 20px;
     overflow-y: auto;
 }
@@ -118,19 +141,7 @@ main {
     padding: 12px;
 }
 
-#sceneMain {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    height: 100%;
-
-    flex-grow: 1;
-
-    background-color: black;
-    color: white;
-}
+/* standard ui things */
 
 .stdBtn {
     background: white;
@@ -152,6 +163,8 @@ main {
     border-color: skyblue;
 }
 
+/* ost player things */
+
 #ostPlayer {
     display: flex;
     flex-direction: row;
@@ -164,7 +177,7 @@ main {
 
     width: 15%;
     min-width: 500px;
-    height: 80px;
+    height: 40px;
     padding: 0px 5px 0px 5px;
 
     opacity: 0.75;
@@ -179,6 +192,5 @@ main {
 }
 
 .ostPlayerBtn {
-    width: 72.5px;
-    height: 72.5px;
+    height: 30px;
 }
