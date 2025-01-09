@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans", serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;   
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+h1, h2, h3, p {
+    margin-top: 10px;
+}
+
+#welcomeScreen {
+    position: absolute;
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+    background-color: black;
+
+    transition: 1.5s opacity;
+}
+
+main {
+    display: flex;
+    aspect-ratio: 16 / 9;
+}
+
+#sceneImg {
+    height: 100%;
+}
+
+#sidebar {
+    position: fixed;
+
+    width: 40%;
+    height: 100%;
+
+    min-width: 400px;
+    max-width: 500px;
+    padding: 30px;
+
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    transition: 0.5s opacity;
+}
+
+#sidebarHideBtn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+#sceneInfo {
+    width: 100%;
+    height: 20%;
+}
+
+#sceneList {
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    padding-bottom: 20px;
+    overflow-y: auto;
+}
+
+.sceneEntry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+    width: 90%;
+    height: 110px;
+    padding: 6px;
+
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: white;
+    border-style: solid;
+
+    background-color: black;
+    opacity: 0.9;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.sceneEntry:hover {
+    width: 95%;
+    height: 120px;
+    padding: 12px;
+}
+
+#sceneMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+
+    flex-grow: 1;
+
+    background-color: black;
+    color: white;
+}
+
+.stdBtn {
+    background: white;
+
+    width: 72.5px;
+    height: 30px;
+
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.stdBtn:hover {
+    border-color: skyblue;
+}
+
+#ostPlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+
+    position: absolute;
+    bottom: 25px;
+
+    width: 15%;
+    min-width: 500px;
+    height: 80px;
+    padding: 0px 5px 0px 5px;
+
+    opacity: 0.75;
+
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+
+    background-color: white;
+    color: black;
+}
+
+.ostPlayerBtn {
+    width: 72.5px;
+    height: 72.5px;
+}
