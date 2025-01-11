@@ -1,4 +1,4 @@
-var welcomeScreen = document.getElementById("welcomeScreen");
+var menuScreen = document.getElementById("menuScreen");
 var galleryStartBtn = document.getElementById("galleryStartBtn");
 
 var sceneInfo = document.getElementById("sceneInfo");
@@ -49,7 +49,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/artemisbar.png",
-        "SceneName": "Handsome Guy",
+        "SceneName": "Handsome One",
         "SceneDay": "(Second day)",
         "SceneComment": '"It’s not a party without music."',
         "SceneOST": "ost/artiebartheme.mp3"
@@ -63,14 +63,14 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/olliebar.png",
-        "SceneName": "getting recommend of name",
+        "SceneName": "Little Rambles",
         "SceneDay": "(Second day)",
         "SceneComment": '"I think you’re a good person."',
         "SceneOST": "ost/generalbartheme.mp3"
     },
     {
         "ImagePath": "imgs/rofibar.png",
-        "SceneName": "Place to Stay",
+        "SceneName": "Place To Stay",
         "SceneDay": "(Second day)",
         "SceneComment": '"Keep me warm, Leo. Pleaseeee?"',
         "SceneOST": "ost/generalbartheme.mp3"
@@ -90,8 +90,15 @@ var scenes = [
         "SceneOST": "ost/artiedreamclub.mp3"
     },
     {
+        "ImagePath": "imgs/hunterparents.png",
+        "SceneName": "Admiration",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"Make us proud. Make them wish they were you."',
+        "SceneOST": "ost/hunterdreamloop.mp3"
+    },
+    {
         "ImagePath": "imgs/hunterfallsmile.png",
-        "SceneName": "Pain, Fall",
+        "SceneName": "Pain, Fall.",
         "SceneDay": "(Third day)",
         "SceneComment": '"So that’s what it feels like. How refreshing."',
         "SceneOST": "ost/hunterdreamloop.mp3"
@@ -104,10 +111,24 @@ var scenes = [
         "SceneOST": "ost/hazymemories.mp3"
     },
     {
+        "ImagePath": "imgs/rofimcbranch.png",
+        "SceneName": "Branch",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"ROFI! LOOK OUT!"',
+        "SceneOST": "ost/epicstorm.mp3",
+    },
+    {
         "ImagePath": "imgs/theodream.jpg",
-        "SceneName": "Selections",
+        "SceneName": "The Scar",
         "SceneDay": "(Third day)",
         "SceneComment": '"One way or another, I always end up back here."',
+        "SceneOST": "ost/conversationsofmind.mp3"
+    },
+    {
+        "ImagePath": "imgs/theocar5.png",
+        "SceneName": "Last thing to Say",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"ZERO."',
         "SceneOST": "ost/conversationsofmind.mp3"
     },
     {
@@ -169,20 +190,15 @@ ostPlayBtn.addEventListener("click", function() {
 sidebarHideBtn.addEventListener("click", function() {
     if (sidebarHidden) {
         sidebar.style.opacity = "1";
-        sceneList.style.display = "flex";
+        sidebar.style.pointerEvents = "all";
         sidebarHideBtn.innerText = "Hide";
     }
     else {
         sidebar.style.opacity = "0";
+        sidebar.style.pointerEvents = "none";
         sidebarHideBtn.innerText = "Show";
     }
     sidebarHidden = !sidebarHidden;
-});
-
-sidebar.addEventListener("transitionend", function() {
-    if (sidebarHidden) {
-        sceneList.style.display = "none";
-    }
 });
 
 for (let i = 0; i < scenes.length; i++) {
@@ -218,7 +234,7 @@ for (let i = 0; i < scenes.length; i++) {
 
 galleryStartBtn.addEventListener("click", function() {
     setActiveScene(0);
-    welcomeScreen.style.opacity = "0";
-    welcomeScreen.style.pointerEvents = "none";
-    setTimeout(() => welcomeScreen.remove(), 1500);
+    menuScreen.style.opacity = "0";
+    menuScreen.style.pointerEvents = "none";
+    setTimeout(() => menuScreen.remove(), 2500);
 });

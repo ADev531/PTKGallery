@@ -19,13 +19,9 @@ body {
     background-color: black;
 }
 
-h1, h2, h3, p {
-    margin-top: 10px;
-}
-
 /* main things */
 
-#welcomeScreen {
+#menuScreen {
     position: absolute;
     display: flex;
 
@@ -40,7 +36,7 @@ h1, h2, h3, p {
     color: white;
     background-color: black;
 
-    transition: 1.5s opacity;
+    transition: 2.5s opacity;
 }
 
 main {
@@ -139,6 +135,10 @@ main {
     width: 95%;
     height: 120px;
     padding: 12px;
+}
+
+.sceneEntry h3, .sceneEntry p {
+    margin-top: 10px;
 }
 
 /* standard ui things */
