@@ -19,9 +19,25 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: underline;
+    color: dodgerblue;
+
+    transition: 0.25s;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
 /* main things */
 
-#menuScreen {
+main {
+    display: flex;
+    aspect-ratio: 16 / 9;
+}
+
+.menuScreen {
     position: absolute;
     display: flex;
 
@@ -39,17 +55,11 @@ body {
     transition: 2.5s opacity;
 }
 
-main {
-    display: flex;
-    aspect-ratio: 16 / 9;
-}
-
 #sceneMain {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px;
     height: 100%;
 
     flex-grow: 1;
@@ -59,7 +69,6 @@ main {
 }
 
 #sceneImg {
-    width: 100%;
     height: 100%;
 
     pointer-events: none;
@@ -160,7 +169,11 @@ main {
 }
 
 .stdBtn:hover {
-    border-color: skyblue;
+    border-color: dodgerblue;
+}
+
+.stdBtn:active {
+    border-color: deepskyblue;
 }
 
 /* ost player things */

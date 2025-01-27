@@ -1,4 +1,4 @@
-var menuScreen = document.getElementById("menuScreen");
+var mainMenu = document.getElementById("mainMenu");
 var galleryStartBtn = document.getElementById("galleryStartBtn");
 
 var sceneInfo = document.getElementById("sceneInfo");
@@ -17,6 +17,21 @@ var sceneImg = document.getElementById("sceneImg");
 var ostPlayer = document.getElementById("ostPlayer");
 var ostPlayBtn = document.getElementById("ostPlayBtn");
 var ost;
+
+/*var ollieDreamKeyFrames_1 = [
+    {
+        "Delay": 700,
+        "ImageFile": "imgs/ollievoid1_1.png"
+    },
+    {
+        "Delay": 700,
+        "ImageFile": "imgs/ollievoid1_2.png"
+    },
+    {
+        "Delay": 700,
+        "ImageFile": "imgs/ollievoid1_3.png"
+    },
+];*/
 
 var scenes = [
     {
@@ -70,7 +85,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/rofibar.png",
-        "SceneName": "Place To Stay",
+        "SceneName": "Place to Stay",
         "SceneDay": "(Second day)",
         "SceneComment": '"Keep me warm, Leo. Pleaseeee?"',
         "SceneOST": "ost/generalbartheme.mp3"
@@ -104,6 +119,20 @@ var scenes = [
         "SceneOST": "ost/hunterdreamloop.mp3"
     },
     {
+        "ImagePath": "imgs/ollievoid1_1.png",
+        "SceneName": "OLIVER",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"Hello world. My name is Oliver."',
+        "SceneOST": "ost/olliedreamsong.mp3"
+    },
+    {
+        "ImagePath": "imgs/ollieoverwhelm.png",
+        "SceneName": "Last Thought",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"I can\'t take this anymore."',
+        "SceneOST": "ost/fatalfail.mp3"
+    },
+    {
         "ImagePath": "imgs/rofimemory.png",
         "SceneName": "Memories with Rofi",
         "SceneDay": "(Third day)",
@@ -126,7 +155,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/theocar5.png",
-        "SceneName": "Last thing to Say",
+        "SceneName": "Last Thing To Say",
         "SceneDay": "(Third day)",
         "SceneComment": '"ZERO."',
         "SceneOST": "ost/conversationsofmind.mp3"
@@ -151,6 +180,13 @@ var scenes = [
         "SceneDay": "(Third day)",
         "SceneComment": '"Sometimes it just feels like I’m running away from myself."',
         "SceneOST": "ost/mainthemeloop.mp3"
+    },
+    {
+        "ImagePath": "imgs/temporarily.png",
+        "SceneName": "The Questions",
+        "SceneDay": "(Third day)",
+        "SceneComment": '"...Would you say you are a happy person?"',
+        "SceneOST": "ost/analogfrost.mp3"
     }
 ];
 
@@ -201,6 +237,13 @@ sidebarHideBtn.addEventListener("click", function() {
     sidebarHidden = !sidebarHidden;
 });
 
+galleryStartBtn.addEventListener("click", function() {
+    setActiveScene(0);
+    mainMenu.style.opacity = "0";
+    mainMenu.style.pointerEvents = "none";
+    setTimeout(() => mainMenu.remove(), 2500);
+});
+
 for (let i = 0; i < scenes.length; i++) {
     const scene = scenes[i];
 
@@ -219,7 +262,7 @@ for (let i = 0; i < scenes.length; i++) {
 
     sceneEntryImg.style.width = "160px";
     sceneEntryImg.style.height = "90px";
-    sceneEntryImg.alt = "Unable to load image.";
+    sceneEntryImg.alt = "Unable to load scene.";
     sceneEntryImg.src = scene.ImagePath;
     
     sceneEntryName.innerText = scene.SceneName;
@@ -231,10 +274,3 @@ for (let i = 0; i < scenes.length; i++) {
     sceneEntry.appendChild(sceneEntryInfo);
     sceneList.appendChild(sceneEntry);
 }
-
-galleryStartBtn.addEventListener("click", function() {
-    setActiveScene(0);
-    menuScreen.style.opacity = "0";
-    menuScreen.style.pointerEvents = "none";
-    setTimeout(() => menuScreen.remove(), 2500);
-});
