@@ -99,7 +99,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/artiesmoke.png",
-        "SceneName": "Leaving",
+        "SceneName": "The Escape",
         "SceneDay": "(Third day)",
         "SceneComment": '"Just need… a moment…"',
         "SceneOST": "ost/artiedreamclub.mp3"
@@ -176,14 +176,14 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/artieporch.png",
-        "SceneName": "Shadow",
+        "SceneName": "Shadow of the Past",
         "SceneDay": "(Third day)",
         "SceneComment": '"Sometimes it just feels like I’m running away from myself."',
         "SceneOST": "ost/mainthemeloop.mp3"
     },
     {
         "ImagePath": "imgs/temporarily.png",
-        "SceneName": "The Questions",
+        "SceneName": "Floating in the Mind",
         "SceneDay": "(Third day)",
         "SceneComment": '"...Would you say you are a happy person?"',
         "SceneOST": "ost/analogfrost.mp3"
