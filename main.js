@@ -1,4 +1,4 @@
-var mainMenu = document.getElementById("mainMenu");
+var menuScreen = document.getElementById("menuScreen");
 var galleryStartBtn = document.getElementById("galleryStartBtn");
 
 var sceneInfo = document.getElementById("sceneInfo");
@@ -17,21 +17,6 @@ var sceneImg = document.getElementById("sceneImg");
 var ostPlayer = document.getElementById("ostPlayer");
 var ostPlayBtn = document.getElementById("ostPlayBtn");
 var ost;
-
-/*var ollieDreamKeyFrames_1 = [
-    {
-        "Delay": 700,
-        "ImageFile": "imgs/ollievoid1_1.png"
-    },
-    {
-        "Delay": 700,
-        "ImageFile": "imgs/ollievoid1_2.png"
-    },
-    {
-        "Delay": 700,
-        "ImageFile": "imgs/ollievoid1_3.png"
-    },
-];*/
 
 var scenes = [
     {
@@ -119,7 +104,7 @@ var scenes = [
         "SceneOST": "ost/hunterdreamloop.mp3"
     },
     {
-        "ImagePath": "imgs/ollievoid1_1.png",
+        "ImagePath": "imgs/ollievoid.png",
         "SceneName": "OLIVER",
         "SceneDay": "(Third day)",
         "SceneComment": '"Hello world. My name is Oliver."',
@@ -154,10 +139,10 @@ var scenes = [
         "SceneOST": "ost/conversationsofmind.mp3"
     },
     {
-        "ImagePath": "imgs/theocar5.png",
+        "ImagePath": "imgs/theocar.png",
         "SceneName": "Last Thing To Say",
         "SceneDay": "(Third day)",
-        "SceneComment": '"ZERO."',
+        "SceneComment": '"I’ll always love you."',
         "SceneOST": "ost/conversationsofmind.mp3"
     },
     {
@@ -183,7 +168,7 @@ var scenes = [
     },
     {
         "ImagePath": "imgs/temporarily.png",
-        "SceneName": "Floating in the Mind",
+        "SceneName": "Floating on the Mind",
         "SceneDay": "(Third day)",
         "SceneComment": '"...Would you say you are a happy person?"',
         "SceneOST": "ost/analogfrost.mp3"
@@ -239,9 +224,9 @@ sidebarHideBtn.addEventListener("click", function() {
 
 galleryStartBtn.addEventListener("click", function() {
     setActiveScene(0);
-    mainMenu.style.opacity = "0";
-    mainMenu.style.pointerEvents = "none";
-    setTimeout(() => mainMenu.remove(), 2500);
+    menuScreen.style.opacity = "0";
+    menuScreen.style.pointerEvents = "none";
+    setTimeout(() => menuScreen.remove(), 2500);
 });
 
 for (let i = 0; i < scenes.length; i++) {

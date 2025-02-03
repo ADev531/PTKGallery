@@ -37,7 +37,7 @@ main {
     aspect-ratio: 16 / 9;
 }
 
-.menuScreen {
+#menuScreen {
     position: absolute;
     display: flex;
 
