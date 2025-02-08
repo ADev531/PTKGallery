@@ -48,6 +48,8 @@ main {
     justify-content: center;
     flex-direction: column;
 
+    z-index: 2;
+
     color: white;
     background-color: black;
 
@@ -86,7 +88,7 @@ main {
     padding: 30px;
     overflow: scroll;
 
-    z-index: 3;
+    z-index: 1;
 
     color: white;
     background-color: black;
@@ -100,7 +102,7 @@ main {
     top: 15px;
     left: 15px;
 
-    z-index: 3;
+    z-index: 1;
 }
 
 #sceneInfo {
@@ -208,8 +210,6 @@ main {
 
     background-color: white;
     color: black;
-
-    z-index: 2;
 }
 
 .ostPlayerBtn {

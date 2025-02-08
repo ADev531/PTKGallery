@@ -1,5 +1,5 @@
-# PTKGallery (Mobile UI)
-This branch tests mobile ui, to make PTKGallery work on mobile devices.
+# PTKGallery
+The unofficial gallery of the game "Promises to Keep VN".  
 
 Credits: [click here](/CREDITS.md)
 
