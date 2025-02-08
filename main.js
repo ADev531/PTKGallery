@@ -157,7 +157,7 @@ var scenes = [
         "SceneName": "Goodnight",
         "SceneDay": "(Third day)",
         "SceneComment": '"You’re safe here with me, Hunter."',
-        "SceneOST": "ost/mainthemedrumsloop.mp3"
+        "SceneOST": "ost/mainthemeloop_drums.mp3"
     },
     {
         "ImagePath": "imgs/artieporch.png",
@@ -197,6 +197,8 @@ function setActiveScene(num) {
     }
 }
 
+// event handlers
+
 ostPlayBtn.addEventListener("click", function() {
     if (ost.paused) {
         ostPlayBtn.innerText = "Pause";
@@ -229,6 +231,8 @@ galleryStartBtn.addEventListener("click", function() {
     setTimeout(() => menuScreen.remove(), 2500);
 });
 
+var tabIndex = 0;
+
 for (let i = 0; i < scenes.length; i++) {
     const scene = scenes[i];
 
@@ -240,6 +244,7 @@ for (let i = 0; i < scenes.length; i++) {
     var sceneEntryDay = document.createElement("p");
 
     sceneEntry.className = "sceneEntry";
+    sceneEntry.tabIndex = tabIndex++;
 
     sceneEntry.addEventListener("click", function() {
         setActiveScene(i);
