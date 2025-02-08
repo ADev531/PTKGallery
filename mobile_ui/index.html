@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>PTK VN Gallery</title>
+    </head>
+    <body>
+        <div id="menuScreen">
+            <h2>PTK VN Gallery</h2>
+            <button id="galleryStartBtn" class="stdBtn">Start</button>
+            <a href="https://github.com/ADev531/PTKGallery/tree/impl/mobile_ui"><p>Github Repository</p></a>
+        </div>
+
+        <div id="mainMenu">
+            <div id="sceneInfo">
+                <h1 id="sceneName">Unknown Scene</h1>
+                <h3 id="sceneDay">(Unknown day)</h3>
+                <p id="sceneComment"></p>
+            </div>
+
+            <h2>Scenes</h2>
+            <div id="sceneList"></div>
+        </div>
+
+        <main>
+            <div id="sceneMain">
+                <button id="mainMenuToggleBtn" class="stdBtn">Menu</button>
+                <img id="sceneImg" alt="Unable to load scene."/>
+                <div id="ostPlayer">
+                    <button id="ostPlayBtn" class="stdBtn ostPlayerBtn">Play</button>
+                </div>
+            </div>
+        </main>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

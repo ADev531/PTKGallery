@@ -43,6 +43,7 @@ main {
 
     width: 100vw;
     height: 100vh;
+    z-index: 10;
 
     align-items: center;
     justify-content: center;
@@ -75,38 +76,31 @@ main {
 
 /* sidebar things */
 
-#mainMenu {
+#sidebar {
     position: fixed;
-    opacity: 0;
-    pointer-events: none;
 
-    width: 100%;
+    width: 40%;
     height: 100%;
 
+    min-width: 400px;
+    max-width: 500px;
     padding: 30px;
-    overflow: scroll;
-
-    z-index: 3;
 
     color: white;
-    background-color: black;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
     transition: 0.5s opacity;
 }
 
-#mainMenuToggleBtn {
+#sidebarHideBtn {
     position: fixed;
-
     top: 15px;
-    left: 15px;
-
-    z-index: 3;
+    right: 15px;
 }
 
 #sceneInfo {
     width: 100%;
     height: 20%;
-    margin-bottom: 1%;
 }
 
 #sceneList {
@@ -208,8 +202,6 @@ main {
 
     background-color: white;
     color: black;
-
-    z-index: 2;
 }
 
 .ostPlayerBtn {

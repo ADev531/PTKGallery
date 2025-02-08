@@ -4,9 +4,9 @@ var galleryStartBtn = document.getElementById("galleryStartBtn");
 var sceneInfo = document.getElementById("sceneInfo");
 var sceneList = document.getElementById("sceneList");
 
-var mainMenu = document.getElementById("mainMenu");
-var mainMenuToggleBtn = document.getElementById("mainMenuToggleBtn");
-var mainMenuHidden = true;
+var sidebar = document.getElementById("sidebar");
+var sidebarHideBtn = document.getElementById("sidebarHideBtn");
+var sidebarHidden = false;
 
 var sceneMain = document.getElementById("sceneMain");
 var sceneName = document.getElementById("sceneName");
@@ -210,16 +210,18 @@ ostPlayBtn.addEventListener("click", function() {
     }
 })
 
-mainMenuToggleBtn.addEventListener("click", function() {
-    if (mainMenuHidden) {
-        mainMenu.style.opacity = "1";
-        mainMenu.style.pointerEvents = "all";
+sidebarHideBtn.addEventListener("click", function() {
+    if (sidebarHidden) {
+        sidebar.style.opacity = "1";
+        sidebar.style.pointerEvents = "all";
+        sidebarHideBtn.innerText = "Hide";
     }
     else {
-        mainMenu.style.opacity = "0";
-        mainMenu.style.pointerEvents = "none";
+        sidebar.style.opacity = "0";
+        sidebar.style.pointerEvents = "none";
+        sidebarHideBtn.innerText = "Show";
     }
-    mainMenuHidden = !mainMenuHidden;
+    sidebarHidden = !sidebarHidden;
 });
 
 galleryStartBtn.addEventListener("click", function() {
