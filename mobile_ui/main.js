@@ -20,158 +20,158 @@ var ost;
 
 var scenes = [
     {
-        "ImagePath": "imgs/mcsnow.png",
+        "ImagePath": "/imgs/mcsnow.png",
         "SceneName": "First Few Steps",
         "SceneDay": "(First day)",
         "SceneComment": '"In that lingering moment, the world seems so... quiet."',
-        "SceneOST": "ost/mainthemeloop.mp3"
+        "SceneOST": "/ost/mainthemeloop.mp3"
     },
     {
-        "ImagePath": "imgs/rofimeet.png",
+        "ImagePath": "/imgs/rofimeet.png",
         "SceneName": "The Mystery Guest",
         "SceneDay": "(First day)",
         "SceneComment": '"It had to be."',
         "SceneOST": null
     },
     {
-        "ImagePath": "imgs/tworoadsdream.png",
+        "ImagePath": "/imgs/tworoadsdream.png",
         "SceneName": "Two Roads",
         "SceneDay": "(Second day)",
         "SceneComment": '"There was never a choice."',
-        "SceneOST": "ost/conversationsofmind.mp3"
+        "SceneOST": "/ost/conversationsofmind.mp3"
     },
     {
-        "ImagePath": "imgs/rofisnow.png",
+        "ImagePath": "/imgs/rofisnow.png",
         "SceneName": "Outside with Rofi",
         "SceneDay": "(Second day)",
         "SceneComment": '"Sitting outside in the snow with you!"',
-        "SceneOST": "ost/mainthemeloop.mp3"
+        "SceneOST": "/ost/mainthemeloop.mp3"
     },
     {
-        "ImagePath": "imgs/artemisbar.png",
+        "ImagePath": "/imgs/artemisbar.png",
         "SceneName": "Handsome One",
         "SceneDay": "(Second day)",
         "SceneComment": '"It’s not a party without music."',
-        "SceneOST": "ost/artiebartheme.mp3"
+        "SceneOST": "/ost/artiebartheme.mp3"
     },
     {
-        "ImagePath": "imgs/hunterbar.png",
+        "ImagePath": "/imgs/hunterbar.png",
         "SceneName": "Billiards with Hunter",
         "SceneDay": "(Second day)",
         "SceneComment": '"No worries! I can teach ya!"',
-        "SceneOST": "ost/generalbartheme.mp3"
+        "SceneOST": "/ost/generalbartheme.mp3"
     },
     {
-        "ImagePath": "imgs/olliebar.png",
+        "ImagePath": "/imgs/olliebar.png",
         "SceneName": "Little Rambles",
         "SceneDay": "(Second day)",
         "SceneComment": '"I think you’re a good person."',
-        "SceneOST": "ost/generalbartheme.mp3"
+        "SceneOST": "/ost/generalbartheme.mp3"
     },
     {
-        "ImagePath": "imgs/rofibar.png",
+        "ImagePath": "/imgs/rofibar.png",
         "SceneName": "Place to Stay",
         "SceneDay": "(Second day)",
         "SceneComment": '"Keep me warm, Leo. Pleaseeee?"',
-        "SceneOST": "ost/generalbartheme.mp3"
+        "SceneOST": "/ost/generalbartheme.mp3"
     },
     {
-        "ImagePath": "imgs/theobar.png",
+        "ImagePath": "/imgs/theobar.png",
         "SceneName": "Falling for…",
         "SceneDay": "(Second day)",
         "SceneComment": '"Hey, you. You need something?"',
-        "SceneOST": "ost/theobartheme.mp3"
+        "SceneOST": "/ost/theobartheme.mp3"
     },
     {
-        "ImagePath": "imgs/artiesmoke.png",
+        "ImagePath": "/imgs/artiesmoke.png",
         "SceneName": "The Escape",
         "SceneDay": "(Third day)",
         "SceneComment": '"Just need… a moment…"',
-        "SceneOST": "ost/artiedreamclub.mp3"
+        "SceneOST": "/ost/artiedreamclub.mp3"
     },
     {
-        "ImagePath": "imgs/hunterparents.png",
+        "ImagePath": "/imgs/hunterparents.png",
         "SceneName": "Admiration",
         "SceneDay": "(Third day)",
         "SceneComment": '"Make us proud. Make them wish they were you."',
-        "SceneOST": "ost/hunterdreamloop.mp3"
+        "SceneOST": "/ost/hunterdreamloop.mp3"
     },
     {
-        "ImagePath": "imgs/hunterfallsmile.png",
+        "ImagePath": "/imgs/hunterfallsmile.png",
         "SceneName": "Pain, Fall.",
         "SceneDay": "(Third day)",
         "SceneComment": '"So that’s what it feels like. How refreshing."',
-        "SceneOST": "ost/hunterdreamloop.mp3"
+        "SceneOST": "/ost/hunterdreamloop.mp3"
     },
     {
-        "ImagePath": "imgs/ollievoid.png",
+        "ImagePath": "/imgs/ollievoid.png",
         "SceneName": "OLIVER",
         "SceneDay": "(Third day)",
         "SceneComment": '"Hello world. My name is Oliver."',
-        "SceneOST": "ost/olliedreamsong.mp3"
+        "SceneOST": "/ost/olliedreamsong.mp3"
     },
     {
-        "ImagePath": "imgs/ollieoverwhelm.png",
+        "ImagePath": "/imgs/ollieoverwhelm.png",
         "SceneName": "Last Thought",
         "SceneDay": "(Third day)",
         "SceneComment": '"I can\'t take this anymore."',
-        "SceneOST": "ost/fatalfail.mp3"
+        "SceneOST": "/ost/fatalfail.mp3"
     },
     {
-        "ImagePath": "imgs/rofimemory.png",
+        "ImagePath": "/imgs/rofimemory.png",
         "SceneName": "Memories with Rofi",
         "SceneDay": "(Third day)",
         "SceneComment": '"C’mon, Leo, walk faster!"',
-        "SceneOST": "ost/hazymemories.mp3"
+        "SceneOST": "/ost/hazymemories.mp3"
     },
     {
-        "ImagePath": "imgs/rofimcbranch.png",
+        "ImagePath": "/imgs/rofimcbranch.png",
         "SceneName": "Branch",
         "SceneDay": "(Third day)",
         "SceneComment": '"ROFI! LOOK OUT!"',
-        "SceneOST": "ost/epicstorm.mp3",
+        "SceneOST": "/ost/epicstorm.mp3",
     },
     {
-        "ImagePath": "imgs/theodream.jpg",
+        "ImagePath": "/imgs/theodream.jpg",
         "SceneName": "The Scar",
         "SceneDay": "(Third day)",
         "SceneComment": '"One way or another, I always end up back here."',
-        "SceneOST": "ost/conversationsofmind.mp3"
+        "SceneOST": "/ost/conversationsofmind.mp3"
     },
     {
-        "ImagePath": "imgs/theocar.png",
+        "ImagePath": "/imgs/theocar.png",
         "SceneName": "Last Thing To Say",
         "SceneDay": "(Third day)",
         "SceneComment": '"I’ll always love you."',
-        "SceneOST": "ost/conversationsofmind.mp3"
+        "SceneOST": "/ost/conversationsofmind.mp3"
     },
     {
-        "ImagePath": "imgs/theodawn.png",
+        "ImagePath": "/imgs/theodawn.png",
         "SceneName": "Sunrise",
         "SceneDay": "(Third day)",
         "SceneComment": '"Thank you, Leo, for just listening."',
         "SceneOST": null
     },
     {
-        "ImagePath": "imgs/hunterhug.png",
+        "ImagePath": "/imgs/hunterhug.png",
         "SceneName": "Goodnight",
         "SceneDay": "(Third day)",
         "SceneComment": '"You’re safe here with me, Hunter."',
-        "SceneOST": "ost/mainthemeloop_drums.mp3"
+        "SceneOST": "/ost/mainthemeloop_drums.mp3"
     },
     {
-        "ImagePath": "imgs/artieporch.png",
+        "ImagePath": "/imgs/artieporch.png",
         "SceneName": "Shadow of the Past",
         "SceneDay": "(Third day)",
         "SceneComment": '"Sometimes it just feels like I’m running away from myself."',
-        "SceneOST": "ost/mainthemeloop.mp3"
+        "SceneOST": "/ost/mainthemeloop.mp3"
     },
     {
-        "ImagePath": "imgs/temporarily.png",
+        "ImagePath": "/imgs/temporarily.png",
         "SceneName": "Floating on the Mind",
         "SceneDay": "(Third day)",
         "SceneComment": '"...Would you say you are a happy person?"',
-        "SceneOST": "ost/analogfrost.mp3"
+        "SceneOST": "/ost/analogfrost.mp3"
     }
 ];
 
