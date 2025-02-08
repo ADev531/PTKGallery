@@ -4,9 +4,9 @@ var galleryStartBtn = document.getElementById("galleryStartBtn");
 var sceneInfo = document.getElementById("sceneInfo");
 var sceneList = document.getElementById("sceneList");
 
-var sidebar = document.getElementById("sidebar");
-var sidebarHideBtn = document.getElementById("sidebarHideBtn");
-var sidebarHidden = false;
+var mainMenu = document.getElementById("mainMenu");
+var mainMenuToggleBtn = document.getElementById("mainMenuToggleBtn");
+var mainMenuHidden = true;
 
 var sceneMain = document.getElementById("sceneMain");
 var sceneName = document.getElementById("sceneName");
@@ -157,7 +157,7 @@ var scenes = [
         "SceneName": "Goodnight",
         "SceneDay": "(Third day)",
         "SceneComment": '"You’re safe here with me, Hunter."',
-        "SceneOST": "ost/mainthemedrumsloop.mp3"
+        "SceneOST": "ost/mainthemeloop_drums.mp3"
     },
     {
         "ImagePath": "imgs/artieporch.png",
@@ -197,6 +197,8 @@ function setActiveScene(num) {
     }
 }
 
+// event handlers
+
 ostPlayBtn.addEventListener("click", function() {
     if (ost.paused) {
         ostPlayBtn.innerText = "Pause";
@@ -208,18 +210,16 @@ ostPlayBtn.addEventListener("click", function() {
     }
 })
 
-sidebarHideBtn.addEventListener("click", function() {
-    if (sidebarHidden) {
-        sidebar.style.opacity = "1";
-        sidebar.style.pointerEvents = "all";
-        sidebarHideBtn.innerText = "Hide";
+mainMenuToggleBtn.addEventListener("click", function() {
+    if (mainMenuHidden) {
+        mainMenu.style.opacity = "1";
+        mainMenu.style.pointerEvents = "all";
     }
     else {
-        sidebar.style.opacity = "0";
-        sidebar.style.pointerEvents = "none";
-        sidebarHideBtn.innerText = "Show";
+        mainMenu.style.opacity = "0";
+        mainMenu.style.pointerEvents = "none";
     }
-    sidebarHidden = !sidebarHidden;
+    mainMenuHidden = !mainMenuHidden;
 });
 
 galleryStartBtn.addEventListener("click", function() {
@@ -228,6 +228,8 @@ galleryStartBtn.addEventListener("click", function() {
     menuScreen.style.pointerEvents = "none";
     setTimeout(() => menuScreen.remove(), 2500);
 });
+
+var tabIndex = 0;
 
 for (let i = 0; i < scenes.length; i++) {
     const scene = scenes[i];
@@ -240,6 +242,7 @@ for (let i = 0; i < scenes.length; i++) {
     var sceneEntryDay = document.createElement("p");
 
     sceneEntry.className = "sceneEntry";
+    sceneEntry.tabIndex = tabIndex++;
 
     sceneEntry.addEventListener("click", function() {
         setActiveScene(i);
